@@ -1,0 +1,170 @@
+/* Navbar */
+.navbar {
+  background-color: #ff7504;
+  color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.nav-center {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  background-color: #000;
+  color: #e0e1dd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.login-btn:hover {
+  background-color: #000;
+  color: rgb(0, 255, 255);
+  box-shadow: 0 3px 10px rgb(255, 72, 0);
+}
+
+/* Container for login page */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 80px; /* space for navbar */
+  background: linear-gradient(135deg, #ff0000, #e07000);
+  box-sizing: border-box;
+}
+
+/* Login box */
+.login-box {
+  background: #f56e00;
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.2), -8px -8px 15px rgba(255,145,0,0.7);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Company logo */
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Welcome text */
+.welcome-text {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Info paragraphs */
+.info-text {
+  margin: 5px 0;
+  color: #000;
+}
+
+/* Two small divs in 2-column layout */
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+.info-card {
+  flex: 1;
+  padding: 8px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2),
+              inset -2px -2px 4px rgba(255,255,255,0.7);
+  color: #333;
+}
+
+/* Phone input */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #e0e0e0;
+  color: #333;
+  box-shadow: inset 4px 4px 6px rgba(0,0,0,0.2), inset -4px -4px 6px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+
+.login-input:hover {
+  background: #d1d1d1;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.2), -4px -4px 6px rgba(255,255,255,0.7);
+  color: #000;
+}
+
+.login-input:focus {
+  border: 1px solid #fff;
+}
+
+/* Send OTP button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #000;
+  color: aqua;
+  transform: translateY(-2px);
+}
+
+/* Sign up link */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.signup-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  color: darkblue;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 import logo from "./assets/logo.jpg";
 const HomePage = () => {
@@ -7,7 +8,8 @@ const HomePage = () => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="nav-center">WAYPORT</div>
-        <button className="login-btn">Login</button>
+       <Link to="/login">
+       <button className="login-btn">Login</button> </Link>
       </nav>
 
       {/* Scrollable Page Content */}
