@@ -1,0 +1,84 @@
+/* HomePage.css - paste this entire file into src/HomePage.css */
+
+/* Reset / base */
+* {
+  box-sizing: border-box;
+}
+html, body, #root {
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page wrapper */
+.homepage {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Navigation Bar (fixed at top, full width) */
+.navbar {
+  background-color: #ff7504; /* dark blue */
+  color: #000000;           /* light text */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;    /* keeps nav bar always on top */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Company Name (center of navbar) */
+.nav-center {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Login Button (top-right, vertically centered in navbar) */
+.login-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  background-color: #000000;
+  color: #e0e1dd;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.login-btn:hover {
+  background-color: #000000;
+  color:rgb(0, 255, 255);
+  box-shadow: 0 3px 10px rgb(255, 72, 0);
+}
+
+/* Content Area (fills remaining viewport, horizontally & vertically centers its children) */
+.home-content {
+  margin-top: 80px; /* leave space for navbar */
+  min-height: calc(100vh - 80px); /* full screen height minus navbar */
+  width: 100%;                       
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  background-color: #ff6600;
+  color: black;
+}
+
+
+/* Logo */
+.company-logo {
+  width: 120px;
+  max-width: 40%;
+  height: auto;
+  margin-bottom: 20px;
+}

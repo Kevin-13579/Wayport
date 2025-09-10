@@ -1,0 +1,33 @@
+/* Splash Screen Styling */
+.splash-container {
+  background-color: #ff6600; /* Change bg color */
+  color: #000000;          /* Text color */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-content {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.splash-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo {
+  width: 60px;  /* adjust size */
+  margin-right: 15px;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
